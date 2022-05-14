@@ -1,6 +1,114 @@
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: rgb(30, 0, 52);
+}
 h1 {
   font-family: "modesto-condensed";
+  color: white;
 }
 p {
   font-family: "forma-djr-micro";
+  color: white;
+}
+/* ONE GRID TO RULE THEM ALL */
+.grid_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* GRID 1 */
+.grid_1_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 1 / span 2;
+}
+/* tekst */
+.element_1 {
+  display: grid;
+  grid-row: span 1;
+}
+/* billede */
+.element_2 {
+  display: grid;
+  object-fit: cover;
+  grid-column: span 2;
+}
+
+/* GRID 2 */
+.grid_1_2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column: 1 / span 2;
+}
+/* billede */
+.element_3 {
+  display: grid;
+  grid-column: span 1;
+  object-fit: cover;
+}
+/* video */
+.element_4 {
+  display: grid;
+  grid-column: 2 / span 1;
+  object-fit: cover;
+}
+
+/* GRID 3 */
+.grid_1_3 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-column: 1 / span 2;
+}
+/* video */
+.element_5 {
+  display: grid;
+  grid-column: span 1;
+  object-fit: cover;
+}
+/* billede */
+.element_6 {
+  display: grid;
+  grid-column: 2 / span 1;
+  object-fit: cover;
+}
+
+/* GRID 4 */
+.grid_1_4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 1 / span 2;
+}
+/* billede */
+.element_7 {
+  display: grid;
+  object-fit: cover;
+  grid-column: span 2;
+}
+
+/* GRID 5 */
+.grid_1_5 {
+  grid-template-columns: 1fr;
+  display: grid;
+  object-fit: cover;
+  grid-column: span 2;
+  align-items: center;
+  padding-right: 602px;
+  padding-left: 600.2px;
+}
+
+/* GRID 6 */
+.grid_1_6 {
+  display: grid;
+  grid-column: span 2;
+  justify-content: center;
+}
+
+.flex_row {
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  height: 200px;
 }
