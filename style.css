@@ -1,3 +1,15 @@
+/* GENERELT */
+* {
+  all: unset;
+  display: revert;
+  cursor: revert;
+  box-sizing: border-box;
+}
+main {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -11,10 +23,13 @@ body {
 h1 {
   font-family: "modesto-condensed";
   color: white;
+  font-size: 3.5vw;
+  padding-bottom: 1.5vw;
 }
 p {
   font-family: "forma-djr-micro";
   color: white;
+  font-size: 2vw;
 }
 
 iframe,
@@ -22,12 +37,6 @@ video {
   width: 100%;
   height: auto;
   aspect-ratio: 16/9;
-}
-
-@media (max-width: 428px) {
-  p {
-    font-size: 1vw;
-  }
 }
 
 /* ONE GRID TO RULE THEM ALL */
@@ -45,10 +54,12 @@ video {
 }
 /* tekst */
 .element_1 {
-  display: grid;
   grid-column: 1 / 2;
-  grid-row: 1 / 5;
+  grid-row: 2 / 5;
+  align-self: top;
+  padding-left: 2vw;
 }
+
 /* billede */
 .element_2 {
   display: grid;
@@ -122,6 +133,8 @@ video {
 .grid_1_6 {
   display: grid;
   grid-column: span 2;
+  margin-top: 3vw;
+  margin-bottom: 2vw;
 }
 
 .flex_row {
@@ -138,4 +151,32 @@ video {
 .icon:hover {
   transition: 0.5s;
   transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+  p {
+    font-size: 3.5vw;
+  }
+  h1 {
+    font-size: 6vw;
+    padding-top: 1.5vw;
+  }
+  .element_1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 5;
+  }
+}
+
+footer {
+  text-align: center;
+  color: white;
+  font-family: "modesto-condensed";
+  text-transform: uppercase;
+  letter-spacing: 0.8rem;
+  position: sticky;
+  top: 100vh;
+  padding-top: 4vw;
+}
+footer p {
+  max-width: none;
 }
